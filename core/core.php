@@ -5,7 +5,7 @@ class Core {
     public function run() {
         $url = explode("index.php", $_SERVER['PHP_SELF']);
         $url = end($url);
-        
+        $params = array();  
         
         
         if (!empty($url)){
@@ -29,7 +29,7 @@ class Core {
         } else {
             $currentController = 'homeController';
             $currentAction = 'index';
-            $params = array();
+            
         }
         
         require_once 'core/controller.php';

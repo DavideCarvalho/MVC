@@ -6,10 +6,15 @@ class homeController extends controller{
         $usuario->setName('Davi');
         
         $dados = array(
-            'name' =>$usuario->getName()
+            'name'=>$usuario->getName()
         );
         
-        $this->loadView('home',$dados);
+        $this->loadTemplate('home',$dados);
+    }
+    
+    public function sobre(){
+        $dados = array();
+        $this->loadTemplate('sobre',$dados);
     }
 }
 
