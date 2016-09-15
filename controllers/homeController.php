@@ -1,20 +1,12 @@
 <?php
 class homeController extends controller{
     public function index(){
-        $usuario = new usuario();
-
-        $usuario->setName('Davi');
         
         $dados = array(
-            'name'=>$usuario->getName()
+            'name'=>'Davi'
         );
         
         $this->loadTemplate('home',$dados);
-    }
-    
-    public function sobre(){
-        $dados = array();
-        $this->loadTemplate('sobre',$dados);
     }
 }
 
