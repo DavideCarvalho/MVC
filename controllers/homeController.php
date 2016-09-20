@@ -8,5 +8,14 @@ class homeController extends controller{
         
         $this->loadTemplate('home',$dados);
     }
+    
+    public function sobre(){
+        
+        $dados = array(
+            'name'=>'Davi'
+        );
+        
+        $this->loadTemplate('sobre',$dados);
+    }
 }
 
